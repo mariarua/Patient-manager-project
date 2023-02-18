@@ -12,12 +12,12 @@ function PatientList({ patients, setPatient, deletePatient }) {
     <div className="md:w-1/2 lg:w-3/5 md:h-screen h-screen overflow-y-scroll mx-3 my-10">
       {patients && patients.length ? (
         <>
-          <h2 className="font-black text-3xl text-center">
+          <h2 className="text-stone-600 text-3xl text-center">
             Listado de pacientes
           </h2>
-          <p className="text-xl mt-5 mb-10 text-center">
+          <p className="text-stone-600 text-xl mt-5 mb-10 text-center">
             Administra tus{" "}
-            <span className="text-indigo-600 font-bold">Paciente y citas</span>
+            <span className="text-pink-500 font-bold">Paciente y citas</span>
           </p>
           {patients.map((patient) => {
             return (
@@ -32,12 +32,12 @@ function PatientList({ patients, setPatient, deletePatient }) {
         </>
       ) : (
         <>
-          <h2 className="font-black text-3xl text-center">
+          <h2 className="font-black text-stone-600 text-3xl text-center">
             Aun no hay pacientes :c
           </h2>
-          <p className="text-xl mt-5 mb-10 text-center">
+          <p className="text-stone-600 text-xl mt-5 mb-10 text-center">
             Comienza agregando pacientes{" "}
-            <span className="text-indigo-600 font-bold">
+            <span className="text-pink-500 font-bold">
               y apareceran en este lugar
             </span>
           </p>

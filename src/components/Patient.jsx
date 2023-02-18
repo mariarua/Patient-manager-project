@@ -6,28 +6,28 @@ function Patient({ patient, setPatient, deletePatient }) {
     }
   };
   return (
-    <div className="m-3 bg-white shadow-md px-5 py-10 rounded-xl">
-      <p className="font-bold mb-3 text-gray-700 uppercase">
+    <div className="text-stone-600 m-2 bg-white shadow-md px-5 py-5 rounded-xl">
+      <p className="font-bold mb-3 uppercase">
         Nombre: <span className="font-normal normal-case">{patient.name}</span>
       </p>
-      <p className="font-bold mb-3 text-gray-700 uppercase">
+      <p className="font-bold mb-3 uppercase">
         Propietario:{" "}
         <span className="font-normal normal-case">{patient.proprietary}</span>
       </p>
-      <p className="font-bold mb-3 text-gray-700 uppercase">
+      <p className="font-bold mb-3 uppercase">
         Email: <span className="font-normal normal-case">{patient.email}</span>
       </p>
-      <p className="font-bold mb-3 text-gray-700 uppercase">
+      <p className="font-bold mb-3 uppercase">
         Fecha alta:{" "}
         <span className="font-normal normal-case">{patient.date}</span>
       </p>
-      <p className="font-bold mb-3 text-gray-700 uppercase">
+      <p className="font-bold mb-3 uppercase">
         Sintomas:{" "}
         <span className="font-normal normal-case">{patient.symptom}</span>
       </p>
       <div className="flex justify-between m-10">
         <button
-          className="py-2 px-10 bg-indigo-600 hover:bg-indigo-700 text-white font-bold uppercase rounded-lg"
+          className="py-2 px-10 bg-pink-500 hover:bg-pink-600 text-white font-bold uppercase rounded-lg"
           type="button"
           onClick={() => setPatient(patient)}
         >

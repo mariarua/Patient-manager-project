@@ -63,10 +63,12 @@ function Form({ patients, setPatients, patient, setPatient }) {
 
   return (
     <div className="md:w-1/2 lg:w-2/5">
-      <h2 className="font-black text-3xl text-center">Seguimiento Pacientes</h2>
-      <p className="text-lg mt-5 text-center mb-10">
+      <h2 className="text-stone-600 text-3xl text-center">
+        Seguimiento Pacientes
+      </h2>
+      <p className="text-stone-600 text-lg mt-5 text-center mb-10">
         Añade Pacientes y{" "}
-        <span className="text-indigo-600 font-bold">Administralos</span>
+        <span className="text-pink-500 font-bold">Administralos</span>
       </p>
       <form
         onSubmit={handleSubmit}
@@ -76,7 +78,7 @@ function Form({ patients, setPatients, patient, setPatient }) {
         <div className="mb-5">
           <label
             htmlFor="mascota"
-            className="block text-gray-700 uppercase font-bold"
+            className="block text-stone-600 uppercase font-bold"
           >
             Nombre Mascota
           </label>
@@ -92,7 +94,7 @@ function Form({ patients, setPatients, patient, setPatient }) {
         <div className="mb-5">
           <label
             htmlFor="propietario"
-            className="block text-gray-700 uppercase font-bold"
+            className="block text-stone-600 uppercase font-bold"
           >
             Nombre Del Propietario
           </label>
@@ -108,7 +110,7 @@ function Form({ patients, setPatients, patient, setPatient }) {
         <div className="mb-5">
           <label
             htmlFor="email"
-            className="block text-gray-700 uppercase font-bold"
+            className="block text-stone-600 uppercase font-bold"
           >
             Email
           </label>
@@ -124,14 +126,14 @@ function Form({ patients, setPatients, patient, setPatient }) {
         <div className="mb-5">
           <label
             htmlFor="alta"
-            className="block text-gray-700 uppercase font-bold"
+            className="block text-stone-600 uppercase font-bold"
           >
             Alta
           </label>
           <input
             id="alta"
             type="date"
-            className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
+            className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md text-gray-400"
             value={date}
             onChange={(e) => setDate(e.target.value)}
           />
@@ -139,7 +141,7 @@ function Form({ patients, setPatients, patient, setPatient }) {
         <div className="mb-5">
           <label
             htmlFor="sintomas"
-            className="block text-gray-700 uppercase font-bold"
+            className="block text-stone-600 uppercase font-bold"
           >
             Sintomas
           </label>
@@ -153,7 +155,7 @@ function Form({ patients, setPatients, patient, setPatient }) {
         </div>
         <input
           type="submit"
-          className="bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-700 cursor-pointer transition-all"
+          className="bg-pink-500 w-full p-3 text-white uppercase font-bold hover:bg-pink-600 cursor-pointer transition-all"
           value={patient.id ? "Editar paciente" : "Agregar paciente"}
         />
       </form>
